@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dke01vh2bha4m"
-path="res://.godot/imported/Astro.png-8221591a1f8c1454d6e816090a1b8eba.ctex"
+uid="uid://cg0emwdpn6vuk"
+path="res://.godot/imported/idle3.png-0fba26284964edc24443599c1cf88095.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Graphics/Player/Astro.png"
-dest_files=["res://.godot/imported/Astro.png-8221591a1f8c1454d6e816090a1b8eba.ctex"]
+source_file="res://Graphics/Player/idle/idle3.png"
+dest_files=["res://.godot/imported/idle3.png-0fba26284964edc24443599c1cf88095.ctex"]
 
 [params]
 
