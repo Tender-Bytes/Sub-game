@@ -10,6 +10,10 @@ config_version=5
 
 [application]
 
-config/name="sub game"
+config/name="Sub-game"
 config/features=PackedStringArray("4.2", "Forward Plus")
 config/icon="res://icon.svg"
+
+[dotnet]
+
+project/assembly_name="Sub-game"
