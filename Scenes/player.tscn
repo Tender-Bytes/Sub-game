@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bp2i281rqko1n"]
+[gd_scene load_steps=17 format=3 uid="uid://bp2i281rqko1n"]
 
 [ext_resource type="Texture2D" uid="uid://1283ts07h5aw" path="res://Graphics/Player/idle/idle1.png" id="1_2gwqi"]
 [ext_resource type="Texture2D" uid="uid://be2v0h3r0u40w" path="res://Graphics/Player/idle/idle2.png" id="2_3u0j0"]
@@ -12,6 +12,10 @@
 [ext_resource type="Texture2D" uid="uid://dkare376s0u02" path="res://Graphics/Player/idle/idle7.png" id="7_nkoqd"]
 [ext_resource type="Texture2D" uid="uid://dlqnvpquxra7h" path="res://Graphics/Player/walk/walk4.png" id="8_tldqd"]
 [ext_resource type="Texture2D" uid="uid://elen7tlww6do" path="res://Graphics/Player/walk/walk5.png" id="9_cyq0l"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_pu2lt"]
+radius = 7.0
+height = 22.0
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8shen"]
 animations = [{
@@ -67,21 +71,23 @@ resource_name = "Idle"
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_bkuyv"]
 _data = {
-"Idle": SubResource("Animation_3fcfy")
+&"Idle": SubResource("Animation_3fcfy")
 }
 
 [node name="Player" type="CharacterBody2D"]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, 2)
+shape = SubResource("CapsuleShape2D_pu2lt")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 sprite_frames = SubResource("SpriteFrames_8shen")
 animation = &"idle"
-frame_progress = 0.0942771
+frame_progress = 0.22824557
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 root_node = NodePath("")
 libraries = {
-"": SubResource("AnimationLibrary_bkuyv")
+&"": SubResource("AnimationLibrary_bkuyv")
 }
